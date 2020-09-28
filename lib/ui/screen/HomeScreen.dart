@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_custom_alertdialog/ui/components/CustomAlertDialog.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -17,13 +18,15 @@ class _HomeScreenState extends State<HomeScreen> {
           child: RaisedButton(
             child: Text("Open Dialog"),
             onPressed: () {
-              openDialog();
+              CustomAlertDialog(
+                context: context,
+                title: "Test Amaçlı Titledir",
+                description: "Test Amaçlı Açıklamadır"
+              ).show();
             },
           ),
         ),
       ),
     );
   }
-
-  openDialog() {}
 }
