@@ -16,16 +16,14 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Center(
           child: RaisedButton(
             child: Text("Open Dialog"),
-            onPressed: () => openDialog(),
+            onPressed: () {
+              openDialog();
+            },
           ),
         ),
       ),
     );
   }
 
-  openDialog() {
-
-
-
-  }
+  openDialog() {}
 }
