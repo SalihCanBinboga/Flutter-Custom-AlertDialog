@@ -21,7 +21,11 @@ class _HomeScreenState extends State<HomeScreen> {
               CustomAlertDialog(
                 context: context,
                 title: "Test Amaçlı Titledir",
-                description: "Test Amaçlı Açıklamadır"
+                description: "Test Amaçlı Açıklamadır",
+                onClose: () {
+                  print('CUSTOM ALERT DİALOG KAPANDI');
+                },
+                buttonType: DialogButtonType.SINGLE_BUTTON
               ).show();
             },
           ),

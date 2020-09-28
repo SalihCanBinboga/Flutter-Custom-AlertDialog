@@ -11,7 +11,7 @@ class CustomAlertDialog {
   final List<Widget> buttonList;
   final Function onClose;
 
-  CustomAlertDialog({this.context, this.title, this.description, this.buttonType, this.buttonList, this.onClose});
+  CustomAlertDialog({@required this.context, this.title, this.description, this.buttonType, this.buttonList, this.onClose});
 
   show() {
     showDialog(
